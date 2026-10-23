@@ -12,6 +12,18 @@ public class LibraryApp {
 
         while (command != 3) {
 
+            System.out.println("""
+                    
+                    ===== LIBRARY HOME =====
+                    1 - Show Available Books
+                    2 - Show Checked Out Books
+                    3 - Exit
+                    ========================
+                    """);
+
+            System.out.print("Enter your choice: ");
+            command = scanner.nextInt();
+            scanner.nextLine();
         }
 
 
