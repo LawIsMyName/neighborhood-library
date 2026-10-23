@@ -28,7 +28,8 @@ public class LibraryApp {
             switch (command) {
             case 1 -> showAvailableBooks(book, scanner);
             case 2 -> ShowCheckedOutBooks(book, scanner);
-            case 3 -> System.out.println();
+            case 3 -> System.out.println("Goodbye!");
+            default -> System.out.println("invalid option.");
             }
         }
 
