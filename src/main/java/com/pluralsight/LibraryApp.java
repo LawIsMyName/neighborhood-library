@@ -3,7 +3,7 @@ package com.pluralsight;
 public class LibraryApp {
     public static void main(String[] args) {
 
-        Book[] books = createBooks();
+        Book[] book = createBooks();
 
     }
 
@@ -32,5 +32,12 @@ public class LibraryApp {
         books[19] = new Book(120, "9780307588371", "Gone Girl", true, "Jessica Miller");
 
         return books;
+    }
+
+    public static void listAllBooks(Book[] books) {
+
+        for (Book book : books) {
+            System.out.println(book);
+        }
     }
 }
