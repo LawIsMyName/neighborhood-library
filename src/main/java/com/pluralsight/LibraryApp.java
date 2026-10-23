@@ -24,6 +24,10 @@ public class LibraryApp {
             System.out.print("Enter your choice: ");
             command = scanner.nextInt();
             scanner.nextLine();
+
+            switch (command) {
+
+            }
         }
 
 
