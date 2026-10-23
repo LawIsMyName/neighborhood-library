@@ -37,7 +37,9 @@ public class LibraryApp {
 
         public static void  showAvailableBooks(Book[] book, Scanner scanner){
 
-            System.out.println();
+            System.out.println("\n===== AVAILABLE BOOKS =====");
+
+
         }
 
 
