@@ -5,6 +5,8 @@ public class LibraryApp {
 
         Book[] book = createBooks();
 
+        listAllBooks(book);
+
     }
 
     private static Book[] createBooks() {
