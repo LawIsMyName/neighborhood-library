@@ -55,6 +55,16 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
 
+    public void checkOut(String name) {
+        isCheckedOut = true;
+        checkedOutTo = name;
+    }
+
+    public void checkIn() {
+        isCheckedOut = false;
+        checkedOutTo = null;
+    }
+
     @Override
     public String toString() {
         return "\n===== BOOK INFORMATION =====" +
