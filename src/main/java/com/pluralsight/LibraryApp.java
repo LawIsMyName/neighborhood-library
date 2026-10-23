@@ -30,7 +30,14 @@ public class LibraryApp {
             case 2 -> ShowCheckedOutBooks(book, scanner);
             case 3 -> System.out.println("Goodbye!");
             default -> System.out.println("invalid option.");
+
             }
+
+        }
+
+        public static void  showAvailableBooks(Book[] book, Scanner scanner){
+
+            System.out.println();
         }
 
 
