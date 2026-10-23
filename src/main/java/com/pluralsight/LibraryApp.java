@@ -35,28 +35,26 @@ public class LibraryApp {
 
         }
 
-        public static void  showAvailableBooks(Book[] book, Scanner scanner) {
 
-            System.out.println("\n===== AVAILABLE BOOKS =====");
 
-            for (Book book : books) {
-                if (book != null && !book.isCheckedOut()) {
-                    System.out.println(
-                            "\nBook ID: " + book.getId() +
-                                    "\nISBN: " + book.getIsbn() +
-                                    "\nTitle: " + book.getTitle() +
-                                    "\n----------------------------"
-                    );
-                }
+    }
+
+    public static void showAvailableBooks(Book[] books, Scanner scanner) {
+
+        System.out.println("\n===== AVAILABLE BOOKS =====");
+
+        for (Book book : books) {
+
+            if (book != null && !book.isCheckedOut()) {
+
+                System.out.println(
+                        "\nBook ID: " + book.getId() +
+                                "\nISBN: " + book.getIsbn() +
+                                "\nTitle: " + book.getTitle() +
+                                "\n----------------------------"
+                );
             }
-
-
-
-
         }
-
-
-
     }
 
     private static Book[] createBooks() {
