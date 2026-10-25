@@ -67,7 +67,13 @@ public class LibraryApp {
 
             for (Book book : books) {
 
+                if (book != null && book.getId() == bookId && book.isCheckedOut()) {
 
+                    book.setCheckedOut(false);
+                    book.setCheckedOutTo(null);
+
+
+                }
             }
 
 
