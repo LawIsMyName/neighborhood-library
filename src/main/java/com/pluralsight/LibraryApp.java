@@ -102,6 +102,7 @@ public class LibraryApp {
                 );
             }
         }
+
         System.out.print("Enter c to check out or x to go back: ");
         String choice = scanner.nextLine();
 
@@ -120,10 +121,15 @@ public class LibraryApp {
 
                     book.setCheckedOut(true);
                     book.setCheckedOutTo(name);
+
+                    System.out.println("Book checked out successfully!");
+                    return;
                 }
             }
 
         }
+
+        System.out.println("Book not found or already checked out");
     }
 
     private static Book[] createBooks() {
