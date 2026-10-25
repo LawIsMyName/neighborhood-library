@@ -11,6 +11,7 @@ public class LibraryApp {
 
         int command = 0;
 
+        // keep menu running until the user exits
         while (command != 3) {
 
             System.out.println("""
@@ -26,6 +27,7 @@ public class LibraryApp {
             command = scanner.nextInt();
             scanner.nextLine();
 
+            // Direct the user to their selected option
             switch (command) {
             case 1 -> showAvailableBooks(book, scanner);
             case 2 -> showCheckedOutBooks(book, scanner);
@@ -43,6 +45,7 @@ public class LibraryApp {
     public static void showCheckedOutBooks(Book[] books, Scanner scanner) {
         System.out.println("\"\\n===== CHECKED OUT BOOKS =====\"");
 
+        //display books that are currently checked out
         for (Book book : books) {
 
             if (book != null && book.isCheckedOut()) {
@@ -66,6 +69,7 @@ public class LibraryApp {
             int bookId = scanner.nextInt();
             scanner.nextLine();
 
+            // find the borrowed book and update its status
             for (Book book : books) {
 
                 if (book != null && book.getId() == bookId && book.isCheckedOut()) {
@@ -87,9 +91,9 @@ public class LibraryApp {
     }
 
     public static void showAvailableBooks(Book[] books, Scanner scanner) {
-
         System.out.println("\n===== AVAILABLE BOOKS =====");
 
+        // display books that are available
         for (Book book : books) {
 
             if (book != null && !book.isCheckedOut()) {
@@ -112,6 +116,7 @@ public class LibraryApp {
             int bookId = scanner.nextInt();
             scanner.nextLine();
 
+            // find the available books and show who has it
             for (Book book : books) {
 
                 if (book != null && book.getId() == bookId && !book.isCheckedOut()) {
@@ -132,6 +137,7 @@ public class LibraryApp {
         System.out.println("Book not found or already checked out");
     }
 
+    // method for array with the library inventory of 20 books and other info
     private static Book[] createBooks() {
         Book[] books = new Book[20];
 
