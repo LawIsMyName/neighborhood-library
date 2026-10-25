@@ -76,10 +76,10 @@ public class LibraryApp {
 
                     return;
 
-
                 }
             }
 
+            System.out.println("Book not found or available.");
 
 
         }
