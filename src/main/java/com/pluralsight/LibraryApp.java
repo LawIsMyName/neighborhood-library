@@ -27,7 +27,7 @@ public class LibraryApp {
 
             switch (command) {
             case 1 -> showAvailableBooks(book, scanner);
-            case 2 -> ShowCheckedOutBooks(book, scanner);
+            case 2 -> showCheckedOutBooks(book, scanner);
             case 3 -> System.out.println("Goodbye!");
             default -> System.out.println("invalid option.");
 
@@ -38,6 +38,11 @@ public class LibraryApp {
 
 
     }
+
+    public static void showCheckedOutBooks(Book[] books, Scanner scanner) {
+
+    }
+
 
     public static void showAvailableBooks(Book[] books, Scanner scanner) {
 
