@@ -104,6 +104,10 @@ public class LibraryApp {
         System.out.print("Enter c to check out or x to go back: ");
         String choice = scanner.nextLine();
 
+        if (choice.equals ("c")) {
+
+        }
+
     }
 
     private static Book[] createBooks() {
