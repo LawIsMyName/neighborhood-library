@@ -79,7 +79,7 @@ public class LibraryApp {
                 }
             }
 
-            System.out.println("Book not found or available.");
+            System.out.println("Book not found or already available.");
 
 
         }
@@ -136,4 +136,5 @@ public class LibraryApp {
             System.out.println(book);
         }
     }
+
 }
