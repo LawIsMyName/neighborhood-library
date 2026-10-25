@@ -104,10 +104,17 @@ public class LibraryApp {
         System.out.print("Enter c to check out or x to go back: ");
         String choice = scanner.nextLine();
 
-        if (choice.equals ("c")) {
+        if (choice.equals("c")) {
+
+            System.out.print("Enter Book ID: ");
+            int bookId = scanner.nextInt();
+            scanner.nextLine();
+
+            for (Book book : books) {
+
+            }
 
         }
-
     }
 
     private static Book[] createBooks() {
