@@ -55,8 +55,20 @@ public class LibraryApp {
                 );
             }
         }
-    }
 
+        System.out.println("Enter c to check in or x to go back: ");
+        String choice = scanner.nextLine();
+
+        if (choice.equals("c")) {
+
+            System.out.print("Enter Book ID: ");
+            int bookId = scanner.nextInt();
+            scanner.nextLine();
+
+
+
+        }
+    }
 
     public static void showAvailableBooks(Book[] books, Scanner scanner) {
 
