@@ -101,6 +101,8 @@ public class LibraryApp {
                 );
             }
         }
+        System.out.print("Enter c to check out or x to go back: ");
+
     }
 
     private static Book[] createBooks() {
