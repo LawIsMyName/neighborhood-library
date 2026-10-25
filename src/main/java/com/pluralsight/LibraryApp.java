@@ -46,6 +46,13 @@ public class LibraryApp {
 
             if (book != null && book.isCheckedOut()) {
 
+                System.out.println(
+                        "\nBook ID: " + book.getId() +
+                                "\nISBN: " + book.getIsbn() +
+                                "\nTitle: " + book.getTitle() +
+                                "\nChecked Out To: " + book.getCheckedOutTo() +
+                                "\n----------------------------"
+                );
             }
         }
     }
