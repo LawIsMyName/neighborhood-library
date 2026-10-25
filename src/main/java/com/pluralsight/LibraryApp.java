@@ -65,6 +65,11 @@ public class LibraryApp {
             int bookId = scanner.nextInt();
             scanner.nextLine();
 
+            for (Book book : books) {
+
+
+            }
+
 
 
         }
