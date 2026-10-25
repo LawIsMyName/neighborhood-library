@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class LibraryApp {
@@ -112,6 +113,11 @@ public class LibraryApp {
 
             for (Book book : books) {
 
+                if (book != null && book.getId() == bookId && !book.isCheckedOut()) {
+
+                    System.out.println("Enter your name: ");
+                    String name = scanner.nextLine();
+                }
             }
 
         }
