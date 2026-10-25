@@ -37,8 +37,6 @@ public class LibraryApp {
 
         }
 
-
-
     }
 
     public static void showCheckedOutBooks(Book[] books, Scanner scanner) {
