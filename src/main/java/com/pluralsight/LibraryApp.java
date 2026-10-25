@@ -117,6 +117,9 @@ public class LibraryApp {
 
                     System.out.println("Enter your name: ");
                     String name = scanner.nextLine();
+
+                    book.setCheckedOut(true);
+                    book.setCheckedOutTo(name);
                 }
             }
 
