@@ -44,6 +44,9 @@ public class LibraryApp {
 
         for (Book book : books) {
 
+            if (book != null && book.isCheckedOut()) {
+
+            }
         }
     }
 
