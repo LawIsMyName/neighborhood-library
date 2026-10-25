@@ -41,6 +41,10 @@ public class LibraryApp {
 
     public static void showCheckedOutBooks(Book[] books, Scanner scanner) {
         System.out.println("\"\\n===== CHECKED OUT BOOKS =====\"");
+
+        for (Book book : books) {
+
+        }
     }
 
 
