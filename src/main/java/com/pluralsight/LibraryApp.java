@@ -72,6 +72,10 @@ public class LibraryApp {
                     book.setCheckedOut(false);
                     book.setCheckedOutTo(null);
 
+                    System.out.println("Book checked in successfully!");
+
+                    return;
+
 
                 }
             }
